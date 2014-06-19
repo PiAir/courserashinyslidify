@@ -1,0 +1,66 @@
+---
+title       : Chick Weight Shiny Application Pitch
+subtitle    : A Pitch for the Developing Data Products MOOC
+author      : Pierre Gorissen
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+---
+
+```{r echo=FALSE}
+library(ggplot2)
+library(shiny)
+library(datasets)
+data(ChickWeight)
+```
+
+## Introduction
+
+The Chick Weight Shiny Application is an online application that:
+* Shows weight of chicks with 4 different diets
+* Allows you to select which diet(s) to view
+* Shows a combined plot
+* Shows a faceted plot
+* Shows the average weight per diet
+
+--- .class #id 
+
+## Example of the combined plot
+```{r echo=FALSE}
+p <- qplot(Time, 
+    weight, 
+    data = ChickWeight,      
+    colour = Diet,
+    main = "Chick Weight per diet",
+    xlab = "Time",
+    ylab = "Chick Weight (gram)") 
+print(p)
+```
+
+--- .class #id 
+
+## Example of the Faceted plot
+```{r echo=FALSE}
+p <- qplot(Time, 
+     weight,
+     data = ChickWeight,
+     colour = Diet,
+     facets = . ~ Diet,
+     main = "Chick Weight per diet",
+     xlab = "Time",
+     ylab = "Chick Weight (gram)") 
+    
+print(p) 
+```
+--- .class #id 
+
+## I want this!!
+If you want to try this great online application, then have a look at [this page](https://piair.shinyapps.io/Shiny/)
+
+
+
+
+
+
