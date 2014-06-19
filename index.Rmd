@@ -18,17 +18,20 @@ data(ChickWeight)
 
 ## Introduction
 
-The Chick Weight Shiny Application is an online application that:
-* Shows weight of chicks with 4 different diets
-* Allows you to select which diet(s) to view
-* Shows a combined plot
-* Shows a faceted plot
+The Chick Weight Shiny Application is an exciting new online application that can do a number of things:
+* It shows the weight of chicks with 4 different diets
+* It allows you to select which diet(s) to view
+* It shows a combined plot of weight per chicken per diet
+* Shows a faceted plot of weight per chicken per diet
 * Shows the average weight per diet
+
+
 
 --- .class #id 
 
 ## Example of the combined plot
 ```{r echo=FALSE}
+
 p <- qplot(Time, 
     weight, 
     data = ChickWeight,      
@@ -37,6 +40,8 @@ p <- qplot(Time,
     xlab = "Time",
     ylab = "Chick Weight (gram)") 
 print(p)
+ 
+
 ```
 
 --- .class #id 
@@ -56,8 +61,12 @@ print(p)
 ```
 --- .class #id 
 
-## I want this!!
+## Interested?!
+
+Quick, safe and simpel!
 If you want to try this great online application, then have a look at [this page](https://piair.shinyapps.io/Shiny/)
+
+![Screenshot](Screenshot.png)
 
 
 
