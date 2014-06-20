@@ -2,8 +2,8 @@
 title       : Chick Weight Shiny Application Pitch
 subtitle    : A Pitch for the Developing Data Products MOOC
 author      : Pierre Gorissen
-framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
-highlighter : highlight.js  # {highlight.js, prettify, highlight}
+framework   : html5slides        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : prettify  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
